@@ -1,0 +1,9 @@
+language: c
+compiler:
+  - gcc
+  - clang
+  - tcc
+before_install:
+ - sudo apt-get update -qq
+ - sudo apt-get install -qq tcc
+script: cd test && ./check.sh
