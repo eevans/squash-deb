@@ -1,0 +1,5 @@
+squash (0.7.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Eric Evans <eevans@debian.org>  Tue, 20 Oct 2015 15:52:06 -0500

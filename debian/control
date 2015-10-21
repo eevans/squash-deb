@@ -1,0 +1,28 @@
+Source: squash
+Priority: optional
+Maintainer: Eric Evans <eevans@debian.org>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.5
+Section: libs
+Homepage: https://quixdb.github.io/squash/
+Vcs-Git: https://github.com/quixdb/squash.git
+Vcs-Browser: https://github.com/quixdb/squash
+
+Package: libsquash-dev
+Section: libdevel
+Architecture: any
+Depends: libsquash (= ${binary:Version}), ${misc:Depends}
+Description: compression abstraction library (development files)
+ Squash provides a single API to access many compression libraries, allowing
+ applications a great deal of flexibility in choosing compression algorithms,
+ including the option to pass that choice along to the user.
+ .
+ This package contains the header files.
+
+Package: libsquash0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: compression abstraction library
+ Squash provides a single API to access many compression libraries, allowing
+ applications a great deal of flexibility in choosing compression algorithms,
+ including the option to pass that choice along to the user.
